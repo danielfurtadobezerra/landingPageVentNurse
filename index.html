@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VentNurse Academy — Simulador de Ventilação Mecânica</title>
+  <meta name="description" content="Aprenda ventilação mecânica na prática com um simulador realista: curvas em tempo real, perfis clínicos, gasometria, alarmes, casos clínicos com IA e processo de enfermagem." />
+  <meta name="theme-color" content="#05080f" />
+  <meta property="og:title" content="VentNurse Academy — Simulador de Ventilação Mecânica" />
+  <meta property="og:description" content="Ajuste o ventilador, observe as curvas e entenda a fisiologia — sem risco ao paciente. Teste 7 dias grátis." />
+  <meta property="og:image" content="/assets/app-simulador.webp" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand" aria-label="VentNurse Academy — início">
+        <img src="/assets/logo.png" alt="VentNurse Academy" width="120" height="65" />
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="/login" data-app class="nav-login">Entrar</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="/login" data-app class="btn btn-ghost hide-sm">Entrar</a>
+        <a href="/register" data-app class="btn btn-primary">Começar grátis</a>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <svg class="hero-wave" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 150 L120 150 L150 60 L260 40 L275 150 L420 150 L450 60 L560 40 L575 150 L720 150 L750 60 L860 40 L875 150 L1020 150 L1050 60 L1160 40 L1175 150 L1200 150" />
+      </svg>
+      <div class="container hero-inner">
+        <span class="pill"><span class="dot"></span> Simulador de ventilação mecânica para enfermagem</span>
+        <h1>Domine a ventilação mecânica <span class="grad">antes de chegar ao leito.</span></h1>
+        <p class="lead">Ajuste o ventilador, veja as curvas de volume, fluxo e pressão responderem em tempo real e entenda a fisiologia por trás de cada alarme — com segurança, no seu ritmo.</p>
+        <div class="hero-ctas">
+          <a href="/register" data-app class="btn btn-primary btn-lg">Testar 7 dias grátis
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#planos" class="btn btn-outline btn-lg">Ver planos</a>
+        </div>
+        <ul class="hero-modes" aria-label="Modos ventilatórios disponíveis">
+          <li>A/C VCV</li><li>A/C PCV</li><li>PSV</li><li>CPAP</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <figure class="shot reveal">
+          <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>VentNurse Academy · Simulador</span></div>
+          <img src="/assets/app-simulador.webp" width="1909" height="881" alt="Tela do simulador VentNurse com parâmetros do ventilador, curvas de volume, fluxo e pressão e painel de gasometria arterial" fetchpriority="high" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>4</strong><span>modos ventilatórios</span></div>
+        <div><strong>3</strong><span>curvas em tempo real + loops</span></div>
+        <div><strong>pH · PaO₂ · P/F</strong><span>gasometria que reage aos ajustes</span></div>
+        <div><strong>IA</strong><span>casos clínicos gerados sob demanda</span></div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="recursos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Recursos</span>
+          <h2>Tudo o que você precisa para entender o ventilador</h2>
+          <p>Da teoria à beira-leito: um ambiente que reproduz o comportamento real do paciente ventilado.</p>
+        </div>
+
+        <div class="features">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+            <h3>Curvas em tempo real</h3>
+            <p>Volume, fluxo e pressão × tempo, além de loops, respondendo a cada ajuste de VC, frequência, fluxo, PEEP e relação I:E.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v7"/><path d="M12 10c-2 0-3 2-5 2-2.5 0-4 3-4 6 0 2 1 3 3 3 3 0 4-3 6-5"/><path d="M12 10c2 0 3 2 5 2 2.5 0 4 3 4 6 0 2-1 3-3 3-3 0-4-3-6-5"/></svg></div>
+            <h3>Perfis clínicos</h3>
+            <p>Pulmão normal, baixa complacência, obstrução e outros cenários com complacência e resistência próprias.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2.7c3 3.8 6 7.2 6 11.3a6 6 0 0 1-12 0c0-4.1 3-7.5 6-11.3z"/></svg></div>
+            <h3>Gasometria e mecânica</h3>
+            <p>pH, PaCO₂, HCO₃⁻, PaO₂, SatO₂ e P/F, junto de manobras de pausa para Pplatô, complacência e resistência.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div>
+            <h3>Alarmes e assincronias</h3>
+            <p>Limites configuráveis, alarmes sonoros e assincronias paciente-ventilador para treinar o raciocínio rápido.</p>
+          </article>
+          <article class="card reveal">
+            <span class="tag">Premium</span>
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+            <h3>Casos clínicos com IA</h3>
+            <p>Gere casos inéditos para estudar sozinho ou aplicar em sala, com cenário, parâmetros e condutas.</p>
+          </article>
+          <article class="card reveal">
+            <span class="tag">Premium</span>
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
+            <h3>Processo de enfermagem</h3>
+            <p>Diagnósticos, intervenções e avaliação do paciente em ventilação mecânica, tudo integrado ao simulador.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOOPS SHOWCASE -->
+    <section class="section section-alt">
+      <div class="container showcase">
+        <div class="showcase-text reveal">
+          <span class="eyebrow">Veja na prática</span>
+          <h2>Reconheça o padrão antes do alarme tocar</h2>
+          <p>Compare o comportamento de um pulmão saudável com um pulmão de baixa complacência e aprenda a ler as curvas como quem lê um sinal vital.</p>
+          <ul class="checks">
+            <li>Loops pressão-volume e fluxo-volume</li>
+            <li>Snapshots para comparar parâmetros lado a lado</li>
+            <li>Explicações sobre quando e por que o ventilador alarma</li>
+          </ul>
+        </div>
+        <div class="videos reveal">
+          <figure>
+            <video src="/assets/loop-normal.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Animação de loop de um pulmão normal"></video>
+            <figcaption>Pulmão normal</figcaption>
+          </figure>
+          <figure>
+            <video src="/assets/loop-baixa-complacencia.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Animação de loop de um pulmão com baixa complacência"></video>
+            <figcaption>Baixa complacência</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Do cadastro à primeira curva em minutos</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span class="num">01</span><h3>Crie sua conta</h3><p>Cadastre-se e use a plataforma completa por 7 dias, sem compromisso.</p></li>
+          <li class="reveal"><span class="num">02</span><h3>Escolha o cenário</h3><p>Selecione o modo ventilatório e o perfil clínico do paciente.</p></li>
+          <li class="reveal"><span class="num">03</span><h3>Ajuste e observe</h3><p>Mude os parâmetros e acompanhe curvas, gasometria e alarmes reagirem.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section-alt" id="planos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Planos</span>
+          <h2>Escolha como quer estudar</h2>
+          <p>Comece com 7 dias grátis. Troque de plano quando quiser, com cobrança proporcional.</p>
+        </div>
+        <div class="pricing">
+          <article class="plan reveal">
+            <h3>Básico</h3>
+            <p class="price"><span>R$</span> 27,90 <small>/mês</small></p>
+            <ul class="checks">
+              <li>Simulador de ventilação mecânica</li>
+              <li>Todos os modos ventilatórios</li>
+              <li>Perfis clínicos essenciais</li>
+            </ul>
+            <a href="/register" data-app class="btn btn-outline btn-block">Começar grátis</a>
+          </article>
+          <article class="plan plan-featured reveal">
+            <span class="ribbon">Mais completo</span>
+            <h3>Premium</h3>
+            <p class="price"><span>R$</span> 49,90 <small>/mês</small></p>
+            <ul class="checks">
+              <li>Tudo do plano Básico</li>
+              <li>Gerador de casos clínicos com IA</li>
+              <li>Snapshots e comparação de parâmetros</li>
+              <li>Processo de enfermagem completo</li>
+            </ul>
+            <a href="/register" data-app class="btn btn-primary btn-block">Começar grátis</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Dúvidas</span>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Para quem é o VentNurse Academy?</summary>
+            <p>Para estudantes e profissionais de enfermagem que querem entender ventilação mecânica com segurança — e para docentes que precisam de um recurso visual para as aulas.</p>
+          </details>
+          <details>
+            <summary>Preciso instalar alguma coisa?</summary>
+            <p>Não. O simulador roda direto no navegador; basta criar sua conta e entrar.</p>
+          </details>
+          <details>
+            <summary>Como funciona o teste grátis?</summary>
+            <p>Ao se cadastrar você tem 7 dias para usar a plataforma. Depois, escolha o plano Básico ou Premium para continuar.</p>
+          </details>
+          <details>
+            <summary>Posso trocar de plano ou cancelar?</summary>
+            <p>Sim. Na página de assinatura você troca entre Básico e Premium (com cobrança proporcional, sem assinatura duplicada) ou gerencia o cancelamento.</p>
+          </details>
+          <details>
+            <summary>O simulador substitui a prática clínica?</summary>
+            <p>Não. É uma ferramenta educacional para consolidar o raciocínio clínico; condutas reais seguem protocolos institucionais e a equipe multiprofissional.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <h2>Pronto para ler o ventilador com confiança?</h2>
+          <p>Crie sua conta agora e comece a simular em minutos.</p>
+          <a href="/register" data-app class="btn btn-primary btn-lg">Testar 7 dias grátis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="/assets/logo.png" alt="VentNurse Academy" width="96" height="52" />
+      <p>© <span id="year">2026</span> VentNurse Academy. Ferramenta educacional — não substitui avaliação clínica.</p>
+      <a href="/login" data-app>Entrar na plataforma</a>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
