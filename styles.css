@@ -204,6 +204,8 @@ p { margin: 0; }
 .footer img { height: 40px; width: auto; }
 .footer p { color: var(--muted); font-size: 14px; }
 .footer a { font-size: 14px; color: var(--primary); }
+.footer-brand { display: flex; align-items: center; gap: 16px; }
+.footer .footer-tagline { color: var(--fg); font-weight: 600; font-size: 15px; }
 
 /* Reveal */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
@@ -248,6 +250,7 @@ p { margin: 0; }
   .features, .steps, .pricing { grid-template-columns: 1fr; }
   .stats-grid div { padding: 14px; }
   .footer-inner { flex-direction: column; text-align: center; }
+  .footer-brand { flex-direction: column; gap: 10px; }
 }
 @media (max-width: 420px) {
   .videos { grid-template-columns: 1fr; }
