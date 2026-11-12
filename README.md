@@ -1,4 +1,4 @@
-# VentNurse Academy — Landing Page
+# VentPro Academy — Landing Page
 
 Página estática (HTML/CSS/JS), sem build. Publicada na Vercel.
 
