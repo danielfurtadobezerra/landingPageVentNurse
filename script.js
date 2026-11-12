@@ -1,5 +1,5 @@
 // URL do app (simulador). Todos os links com [data-app] apontam para cá.
-const APP_URL = "https://ventnurseacademy.vercel.app";
+const APP_URL = "https://ventproacademy.vercel.app";
 
 document.querySelectorAll("[data-app]").forEach((a) => {
   a.href = APP_URL + a.getAttribute("href");
